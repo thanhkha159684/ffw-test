@@ -1,0 +1,9 @@
+ajax_list:
+  version: 1
+  js:
+    js/ajax_list.js: {}
+  dependencies:
+    - core/drupal
+    - core/modernizr
+    - core/jquery.once
+    - core/jquery.ui.datepicker

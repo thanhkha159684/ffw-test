@@ -1,0 +1,5 @@
+address_entry.add_form:
+  route_name: entity.address_entry.add_form
+  title: 'Add address entry'
+  appears_on:
+    - entity.address_entry.collection

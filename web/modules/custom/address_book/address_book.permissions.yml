@@ -1,0 +1,17 @@
+administer address entry types:
+  title: 'Administer address entry types'
+  description: 'Maintain the types of address entry entity.'
+  restrict access: true
+administer address entry:
+  title: Administer address entry settings
+  restrict access: true
+access address entry overview:
+  title: 'Access address entry overview page'
+delete address entry:
+  title: Delete address entry
+create address entry:
+  title: Create address entry
+view address entry:
+  title: View address entry
+edit address entry:
+  title: Edit address entry
