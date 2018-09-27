@@ -1,0 +1,20 @@
+base:
+  version: 1.x
+  js:
+    js/script.js: {}
+    js/form.js: {}
+  css:
+    theme:
+      css/layout.css: {weight:99}
+      css/form.css: {weight:100}
+      css/style.css: {weight:100}
+  dependencies:
+    - base_theme/select2
+
+select2:
+  version: VERSION
+  css:
+    theme:
+      node_modules/select2/dist/css/select2.min.css: {}
+  js:
+    node_modules/select2/dist/js/select2.min.js: {}

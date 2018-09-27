@@ -1,0 +1,286 @@
+.btn{
+  border-radius: 100px;
+  outline: none !important;
+  padding: 10px 20px;
+}
+.btn-small{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.btn-primary{
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background: #555 !important;
+}
+table th a,
+table th a:hover,
+table th a:focus{
+  color: inherit;
+}
+input[type=date].form-control, input[type=time].form-control, input[type=datetime-local].form-control, input[type=month].form-control{
+  line-height: inherit;
+}
+.messages__list{
+  font-size: 20px;
+}
+body .label{
+  display: block;
+  text-align: left;
+  line-height: inherit;
+  padding: 0px;
+  margin-bottom: 5px;
+  font-size: inherit;
+}
+.content,.content-header{
+  padding: 20px 30px;
+}
+.main-sidebar{
+  padding-top: 0px;
+  z-index: 10 !important;
+  width: 300px;
+}
+
+.skin-black .main-sidebar, .skin-black .left-side{
+  background: #fafafa;
+}
+
+.skin-black .wrapper{
+  background: #fafafa;
+}
+
+.wrapper{
+  height: auto;
+  min-height: 100vh;
+}
+.content-wrapper{
+  background: inherit;
+  margin-left: 300px;
+}
+.nav-tabs.primary{
+ position: fixed;
+ right: 10px;
+ bottom: 1px;
+ z-index: 100;
+ background: #e3e3e3;
+ border:1px solid #ccc;
+ margin: 0px;
+
+}
+.form-item, .form-actions{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.form-control{
+  background: #fff;
+  padding: 10px 20px;
+  height: auto;
+}
+.layout-entity-form .section-item{
+  padding: 20px 0px;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+.layout-entity-form .section-item.collapsed .section-description{
+  display:  none;
+}
+.layout-entity-form .section-item .dropdown-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url('../images/dropdown_arrow.svg') no-repeat center center/15px;
+  cursor: pointer;
+}
+.layout-entity-form .section-item .dropdown-btn:hover{
+  background-color: #f0f0f0;
+}
+.layout-entity-form .section-item.collapsed .dropdown-btn{
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+
+}
+.layout-entity-form .section-item .section-title{
+  margin-bottom: 20px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+.layout-entity-form .description{
+  display: none;
+}
+.form-managed-file{
+  background: #fff;
+  padding: 20px;
+  min-height: 80px;
+}
+.form-managed-file input[type="file"]{
+  display: inline-block;
+  width: auto;
+  background: transparent;
+  border:none;
+  outline: none;
+}
+.image-preview{
+  display: inline-block;
+}
+.image-widget-data {
+  display: inline-block;
+}
+.image-preview + .image-widget-data{
+  float: right;
+}
+
+.form-managed-file .form-submit{
+  float: right;
+}
+.form-radio[value="_none"],
+.form-radio[value="_none"] + label{
+  display: none;
+
+}
+
+.form-radio + label{
+  cursor: pointer;
+}
+.form-composite > legend, .label{
+  border-bottom: none;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+label{
+  border: none;
+}
+legend{
+  font-size: inherit;
+  font-weight: 700;
+  border: none;
+  margin-bottom: 0px;
+}
+.paragraphs-dropbutton-wrapper .dropbutton-widget{
+  border: none;
+  background: transparent;
+}
+.layout-entity-form input[type="checkbox"]{
+  display: none;
+}
+.layout-entity-form input[type="checkbox"] + label{
+  position: relative;
+  padding-left: 30px;
+}
+.layout-entity-form input[type="checkbox"] + label:before,
+.layout-entity-form input[type="checkbox"] + label:after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top:  50%;
+  margin-top: -10px;
+  left: 0%;
+  background: url('../images/tick_deselect.png') no-repeat center center/cover;
+}
+.layout-entity-form input[type="checkbox"]:checked + label:after{
+  background-image:  url('../images/tick_select.png');
+}
+
+.layout-entity-form .checkbox-table input + label{
+  position: static;
+}
+.layout-entity-form .checkbox-table input + label:before,
+.layout-entity-form .checkbox-table input + label:after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: inherit;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -10px;
+  background: url('../images/tick_deselect.png') no-repeat center center/cover;
+}
+.layout-entity-form .checkbox-table input:checked + label:after{
+  background-image:  url('../images/tick_select.png');
+}
+.layout-entity-form .checkbox-wrapper .checkall{
+  float: right;
+
+}
+.layout-entity-form .checkbox-wrapper .checkall  label{
+  position: relative;
+}
+.layout-entity-form .checkbox-wrapper .checkall  label:before,
+.layout-entity-form .checkbox-wrapper .checkall  label:after{
+  left:0px;
+  bottom: 5px;
+}
+
+input[type="radio"]{
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  margin-left: 5px;
+}
+
+.layout-region-node-secondary .fieldset-legend{
+  padding: 10px;
+  background: #e3e3e3;
+  display: block;
+}
+.layout-region-node-secondary > .form-wrapper{
+  margin-bottom: 30px;
+}
+.form-item .form-control.error,
+.form-item .form-control.error + .select2{
+  border: 2px solid red !important;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span:not(.pull-right), .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu{
+  width: 250px !important;
+}
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span{
+  margin-left: 0px !important;
+}
+form.no-edit .form-control{
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+  padding-left: 0px;
+  cursor: default;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+form.no-edit .form-submit{
+  display: none;
+}
+#user-admin-permissions table th{
+  font-size: 10px;
+}
+.dropdown-menu {
+    background: #000;
+    color: #fff;
+}
+.dropdown-menu>li>a{
+  color: #fff;
+}
+.empty-box{
+  padding: 20px 0px;
+}
+.clear-left{
+  clear: left;
+}

@@ -1,0 +1,27 @@
+name: Base Admin Theme
+description: 'MTL admin theme based on AdminLTE theme'
+base theme: yorkshire
+package: Custom
+type: theme
+# version: 1.0.0
+# core: 8.x
+libraries:
+  - base_theme/base
+regions:
+  brand: Site Branding
+  header: Header
+  top: Top
+  content: Content
+  bottom: Bottom
+  sidebar: Sidebar
+  footer: Footer
+  right_sidebar: Right sidebar
+features:
+  - favicon
+  - logo
+
+# Information added by Drupal.org packaging script on 2018-02-24
+version: '8.x-1.0'
+core: '8.x'
+project: 'base_theme'
+datestamp: 1519506484

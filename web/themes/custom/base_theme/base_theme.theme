@@ -1,0 +1,53 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+
+
+/**
+ * Implements hook_preprocess_page().
+ */
+
+function base_theme_preprocess_page(&$variables) {
+  $variables['logo'] = str_replace('.svg','.svg',theme_get_setting('logo.url'));
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function base_theme_preprocess_html(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $variables['attributes']['class'][] = str_replace('/','-',trim($current_path,"\/"));
+  if (isset($_COOKIE['sidebar_menu_open']) && $_COOKIE['sidebar_menu_open'] !=1) {
+    $variables['attributes']['class'][] = 'sidebar-collapse';
+  }
+}
+/**
+ * Implements hook_form_alter().
+ */
+function base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['name']['#attributes']['placeholder'] = t('Enter here');
+    $form['pass']['#attributes']['placeholder'] = t('Enter here');
+  }
+  if ($form_id == "user_form" || $form_id =="user_register_form") {
+    $form['#theme'] = ['user_edit_form'];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+function base_theme_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+
+  if($hook=='table' && isset($variables['attributes']['id'])) {
+    $suggestions[] = 'table__'.$variables['attributes']['id'];
+  }
+}
+/**
+ * Implements hook_preprocess_node().
+ */
+
+function base_theme_preprocess_node(&$variables) {
+  if ($variables['node']->getType() =='campaign') {
+    $variables["campaign_items"] = views_embed_view('campaign_items', 'default',$variables['node']->id());
+  }
+}
