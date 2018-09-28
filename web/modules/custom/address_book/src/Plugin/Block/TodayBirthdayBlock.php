@@ -94,12 +94,12 @@ class TodayBirthdayBlock extends BlockBase implements ContainerFactoryPluginInte
       '#markup'=> '<h3>'.t('Today\'s birth day').'</h3>',
     ];
     $build['table'] =  [
-
       '#type' => 'table',
       '#header' => $headers,
       '#rows' => $rows,
       '#weight'=> 100,
     ];
+    $build['#cache']['max-age'] = 0;
     return $build;
   }
 
