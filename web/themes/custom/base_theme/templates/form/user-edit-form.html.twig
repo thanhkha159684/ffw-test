@@ -1,0 +1,67 @@
+<div class="layout-entity-form">
+  <div class="layout-region-entity-main">
+    <h3 class="section-title">{{"User information"|t}}</h3>
+    <div class="section-item">
+      <div class="">
+        {{ form.field_title }}
+      </div>
+       <div class="">
+        {{ form.field_first_name }}
+      </div>
+      <div class="">
+        {{ form.field_last_name }}
+      </div>
+      <div class="">
+        {{ form.field_staff_id }}
+      </div>
+      <div>
+        {{ form.account.mail }}
+      </div>
+    </div>
+    <h3 class="section-title">{{ "Login details"|t }}</h3>
+    <div class="section-item">
+      <div>
+        {{ form.account.name }}
+      </div>
+      <div>
+        {{ form.account.pass }}
+      </div>
+    </div>
+
+    <h3 class="section-title">{{"Department"|t}}</h3>
+    <div class="section-item">
+      <div>
+        {{form.field_department}}
+      </div>
+      <div id ="edit-field-office-set">
+        {{form.field_office}}
+      </div>
+    </div>
+
+    <div class="section-item show_if_inventory">
+      <h3 class="section-title">{{ form.field_assign_temporary_on_off }}</h3>
+      <div class="temporary_access">
+        {{ form.field_assign_a_temporary_access }}
+      </div>
+    </div>
+    <div class="section-item" id="user-roles">
+      <h3 class="section-title">{{"User roles"|t}}</h3>
+      <div class="checkbox-table">
+        {{form.account.roles}}
+      </div>
+    </div>
+    <div class="section-item">
+      <h3 class="section-title">{{"User status"|t}}</h3>
+      {{form.account.status}}
+    </div>
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+    {{ form.actions }}
+  </div>
+  <div class="layout-region-entity-footer">
+    <div class="layout-region-entity-footer__content">
+      {{ form.footer }}
+    </div>
+  </div>
+</div>

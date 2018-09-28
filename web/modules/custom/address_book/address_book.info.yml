@@ -1,0 +1,5 @@
+name: Address book
+type: module
+description: 'Provides an address entry entity.'
+package: FFW
+core: 8.x

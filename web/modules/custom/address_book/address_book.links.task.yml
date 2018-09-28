@@ -1,0 +1,13 @@
+entity.address_entry.view:
+  title: View
+  route_name: entity.address_entry.canonical
+  base_route: entity.address_entry.canonical
+entity.address_entry.edit_form:
+  title: Edit
+  route_name: entity.address_entry.edit_form
+  base_route: entity.address_entry.canonical
+entity.address_entry.delete_form:
+  title: Delete
+  route_name: entity.address_entry.delete_form
+  base_route: entity.address_entry.canonical
+  weight: 10

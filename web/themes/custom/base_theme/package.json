@@ -1,0 +1,15 @@
+{
+  "name": "mtl",
+  "version": "1.0.0",
+  "description": "Manage extra packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MTL",
+  "license": "ISC",
+  "dependencies": {
+    "jquery.cookie": "^1.4.1",
+    "select2": "^4.0.6-rc.1"
+  }
+}

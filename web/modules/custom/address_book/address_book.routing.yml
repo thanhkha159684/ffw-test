@@ -1,0 +1,14 @@
+entity.address_entry.collection:
+  path: 'admin/address-entry/manage'
+  defaults:
+    _form: '\Drupal\address_book\Form\AddressEntryListForm'
+    _title: 'Address Entry List'
+  requirements:
+    _permission: 'administer address entry'
+entity.address_entry.search:
+  path: 'address-entry/search'
+  defaults:
+    _form: '\Drupal\address_book\Form\SearchAddressEntryForm'
+    _title: 'Address Entry Search'
+  requirements:
+    _permission: 'view address entry'
